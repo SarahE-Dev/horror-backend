@@ -116,8 +116,7 @@ exports.login = async (req, res) => {
         delete userResponse.password;
 
         res.json({
-            token,
-            user: userResponse
+            token
         });
 
     } catch (error) {
